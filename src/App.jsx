@@ -67,7 +67,7 @@ export const App = () => {
         >
           Reverse
         </button>
-        {goodList.some((item, i) => item !== goodsFromServer[i]) && (
+        {(sortField !== '' || reversed) && (
           <button
             type="button"
             className="button is-danger is-light"
